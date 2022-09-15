@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "react-native-cognito",
+    "slug": "react-native-cognito",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

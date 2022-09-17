@@ -6,18 +6,17 @@ import { withAuthenticator } from 'aws-amplify-react-native';
 
 import awsmobile from './src/config/aws-exports';
 
-Amplify.configure(awsmobile);
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import DrawerNavigation from './src/navigation/drawerNavigation';
+
+//Amplify.configure(awsmobile);
 
 const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Você está autenticado.</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <DrawerNavigation />;
 }
 
-export default withAuthenticator(App);
+// export default withAuthenticator(App);
+export default App;
 
 const styles = StyleSheet.create({
   container: {
